@@ -1,0 +1,30 @@
+{
+  "kernels": [
+    "FusedConv2D",
+    "fusedConv2d__op",
+    "MaxPool",
+    "Sigmoid",
+    "Cast",
+    "GatherV2",
+    "Concat",
+    "Prod",
+    "Reshape",
+    "Pack",
+    "BatchMatMul",
+    "Add",
+    "_FusedMatMul",
+    "fusedMatMul__op",
+    "Softmax",
+    "Identity"
+  ],
+  "backends": [
+    "webgl",
+    "cpu",
+    "wasm"
+  ],
+  "models": [
+    "./static/model/model.json"
+  ],
+  "outputPath": "./tfjs",
+  "forwardModeOnly": true
+}

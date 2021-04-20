@@ -1,0 +1,19 @@
+[package]
+name = "aver-web-backend"
+version = "0.0.1"
+authors = ["Arjun Barrett <arjunbarrett@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "0.10"
+actix-web = "3"
+actix-cors = "0.5"
+actix-web-actors = "3"
+tokio = { version = "1", features = ["fs"] }
+futures = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = true

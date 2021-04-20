@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@parcel/config-default",
+    "parcel-config-pwa-manifest",
+    "parcel-config-precache-manifest"
+  ],
+  "transformers": {
+    "*.{png,bin,pico}": ["@parcel/transformer-raw"]
+  }
+}

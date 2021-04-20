@@ -1,0 +1,21 @@
+diff --git a/node_modules/@parcel/scope-hoisting/lib/helpers.js b/node_modules/@parcel/scope-hoisting/lib/helpers.js
+index 831ff4c..8c3d56b 100644
+--- a/node_modules/@parcel/scope-hoisting/lib/helpers.js
++++ b/node_modules/@parcel/scope-hoisting/lib/helpers.js
+@@ -18,7 +18,7 @@ function $parcel$defineInteropFlag(a) {
+ }
+ 
+ function $parcel$export(e, n, v) {
+-  Object.defineProperty(e, n, {get: v, enumerable: true});
++  Object.defineProperty(e, n, {get: v, enumerable: true, configurable: true});
+ }
+ 
+ function $parcel$exportWildcard(dest, source) {
+@@ -29,6 +29,7 @@ function $parcel$exportWildcard(dest, source) {
+ 
+     Object.defineProperty(dest, key, {
+       enumerable: true,
++      configurable: true,
+       get: function get() {
+         return source[key];
+       },
